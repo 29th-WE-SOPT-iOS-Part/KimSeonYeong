@@ -144,6 +144,9 @@
                         <viewLayoutGuide key="safeArea" id="xQO-XF-8TZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="Wrb-0A-NaP" id="QGz-OZ-2su"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sn8-Ry-ZNq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

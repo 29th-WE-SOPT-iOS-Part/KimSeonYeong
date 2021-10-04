@@ -9,6 +9,8 @@ import UIKit
 
 class SigninViewController: UIViewController {
 
+    @IBOutlet weak var nameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,8 +19,9 @@ class SigninViewController: UIViewController {
     
 
     @IBAction func touchUpToGoToWelcomeView(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") else {return}
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
         
+        nextVC.name = nameTextField.text
         self.present(nextVC, animated: true, completion: nil)
     }
     
