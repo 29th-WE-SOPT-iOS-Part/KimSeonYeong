@@ -9,13 +9,28 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var nameTextField: UITextField!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func touchUpToGoToSigninView(_ sender: Any) {
+        guard let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "SigninViewController") else {return}
+        
+        self.navigationController?.pushViewController(pushVC, animated: true)
+    }
+    
+    @IBAction func touchUpToGoToWelcomeView(_ sender: Any) {
+        guard let presentVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
+        
+        presentVC.name = nameTextField.text
+        self.present(presentVC, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

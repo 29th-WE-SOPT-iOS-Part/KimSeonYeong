@@ -9,12 +9,21 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    var name: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setNameInLabel()
         // Do any additional setup after loading the view.
     }
     
+    func setNameInLabel () {
+        if let n = name {
+            nameLabel.text = n
+            nameLabel.sizeToFit()
+        }
+    }
 
     /*
     // MARK: - Navigation

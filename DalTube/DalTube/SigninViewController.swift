@@ -16,6 +16,13 @@ class SigninViewController: UIViewController {
     }
     
 
+    @IBAction func touchUpToGoToWelcomeView(_ sender: Any) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") else {return}
+        
+        self.present(nextVC, animated: true, completion: nil)
+    }
+    
+    
     /*
     // MARK: - Navigation
 
