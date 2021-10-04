@@ -140,12 +140,26 @@
                                     <action selector="touchUpToGoToWelcomeView:" destination="1HE-RS-33r" eventType="touchUpInside" id="uX4-97-VmS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCN-yQ-Hg2">
+                                <rect key="frame" x="35" y="611" width="122" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="비밀번호 표시" image="rectangle" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapShowPassword:" destination="1HE-RS-33r" eventType="touchUpInside" id="D3i-Sr-VJR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xQO-XF-8TZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="idTextField" destination="234-V9-dxk" id="dtl-oG-0CE"/>
                         <outlet property="nameTextField" destination="Wrb-0A-NaP" id="QGz-OZ-2su"/>
+                        <outlet property="nextButton" destination="bvp-5a-3De" id="ulz-uU-db3"/>
+                        <outlet property="passwordTextField" destination="iY9-qJ-oL4" id="gbl-DC-EGx"/>
+                        <outlet property="showPasswordButton" destination="JCN-yQ-Hg2" id="qH6-UH-m6m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sn8-Ry-ZNq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -220,6 +234,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="rectangle" catalog="system" width="128" height="93"/>
         <image name="square.fill" catalog="system" width="128" height="114"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
