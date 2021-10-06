@@ -12,7 +12,6 @@ class SigninViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
     @IBOutlet weak var showPasswordButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     
