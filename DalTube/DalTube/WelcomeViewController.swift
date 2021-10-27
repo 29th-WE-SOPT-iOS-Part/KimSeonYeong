@@ -20,7 +20,7 @@ class WelcomeViewController: UIViewController {
     
     func setNameInLabel () {
         if let n = name {
-            nameLabel.text = n
+            nameLabel.text = "\(n)님"
             nameLabel.sizeToFit()
         }
     }
