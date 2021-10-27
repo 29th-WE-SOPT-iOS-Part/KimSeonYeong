@@ -25,10 +25,10 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func touchUpToGoToWelcomeView(_ sender: Any) {
-        guard let presentVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
+        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
         
-        presentVC.name = nameTextField.text
-        self.present(presentVC, animated: true, completion: nil)
+        welcomeVC.name = nameTextField.text
+        self.navigationController?.pushViewController(welcomeVC, animated: true)
     }
     
     /*

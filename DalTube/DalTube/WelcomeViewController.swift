@@ -15,9 +15,17 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNameInLabel()
-        // Do any additional setup after loading the view.
+        
     }
     
+    //다른 계정으로 로그인하기
+    @IBAction func touchUpToGoToLoginView(_ sender: Any) {
+//        guard let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") else {return}
+        
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
+
     func setNameInLabel () {
         if let n = name {
             nameLabel.text = "\(n)님"
