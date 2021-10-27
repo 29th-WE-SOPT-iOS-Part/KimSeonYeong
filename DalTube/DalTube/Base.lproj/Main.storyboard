@@ -252,20 +252,25 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김선영님 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BX6-Il-cqF">
-                                <rect key="frame" x="0.0" y="324" width="118" height="31.5"/>
+                                <rect key="frame" x="0.0" y="324" width="161" height="31.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="rtk-rk-B2s">
-                                <rect key="frame" x="0.0" y="259" width="118" height="40"/>
+                                <rect key="frame" x="0.0" y="259" width="161" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="118" id="0zV-h2-hcy"/>
                                     <constraint firstAttribute="height" constant="40" id="rvL-Gc-U9U"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jn-63-4Za">
+                                <rect key="frame" x="0.0" y="505" width="141" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="다른 계정으로 로그인하기"/>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="반갑습니다" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0w-Hu-WZZ">
-                                <rect key="frame" x="0.0" y="355.5" width="118" height="31.5"/>
+                                <rect key="frame" x="0.0" y="355.5" width="161" height="31.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -274,6 +279,7 @@
                         <viewLayoutGuide key="safeArea" id="sOX-O6-cn6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="0Jn-63-4Za" firstAttribute="top" secondItem="ZB4-7P-cda" secondAttribute="bottom" constant="23" id="3wK-Rw-IT7"/>
                             <constraint firstItem="rtk-rk-B2s" firstAttribute="top" secondItem="sOX-O6-cn6" secondAttribute="top" constant="215" id="5nL-Mg-Gao"/>
                             <constraint firstItem="rtk-rk-B2s" firstAttribute="leading" secondItem="sOX-O6-cn6" secondAttribute="leading" id="HS3-38-Zw3"/>
                             <constraint firstItem="ZB4-7P-cda" firstAttribute="top" secondItem="t0w-Hu-WZZ" secondAttribute="bottom" constant="50" id="Mk7-di-5ft"/>
@@ -286,6 +292,8 @@
                             <constraint firstItem="t0w-Hu-WZZ" firstAttribute="leading" secondItem="sOX-O6-cn6" secondAttribute="leading" id="isD-PE-fEl"/>
                             <constraint firstItem="ZB4-7P-cda" firstAttribute="leading" secondItem="sOX-O6-cn6" secondAttribute="leading" id="nCU-S5-o9k"/>
                             <constraint firstAttribute="trailing" secondItem="t0w-Hu-WZZ" secondAttribute="trailing" id="spx-R9-9tT"/>
+                            <constraint firstItem="0Jn-63-4Za" firstAttribute="leading" secondItem="sOX-O6-cn6" secondAttribute="leading" id="yIO-c0-Bs4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Jn-63-4Za" secondAttribute="trailing" id="zAJ-A6-0O1"/>
                         </constraints>
                     </view>
                     <connections>
