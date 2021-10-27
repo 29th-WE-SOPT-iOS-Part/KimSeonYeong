@@ -18,14 +18,20 @@ class WelcomeViewController: UIViewController {
         
     }
     
+    //확인
+    @IBAction func goTabBarVC(_ sender: Any) {
+        guard let tabBarVC = self.storyboard?.instantiateViewController(withIdentifier: "CustomTabBarController") else {return}
+        
+        tabBarVC.modalPresentationStyle = .fullScreen
+        self.present(tabBarVC, animated: true, completion: nil)
+    }
+    
+    
     //다른 계정으로 로그인하기
     @IBAction func touchUpToGoToLoginView(_ sender: Any) {
-//        guard let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") else {return}
-        
         self.navigationController?.popToRootViewController(animated: true)
     }
     
-
     func setNameInLabel () {
         if let n = name {
             nameLabel.text = "\(n)님"
