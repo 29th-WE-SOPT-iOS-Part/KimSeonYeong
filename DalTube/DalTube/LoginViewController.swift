@@ -28,7 +28,7 @@ class LoginViewController: UIViewController {
         guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
         
         welcomeVC.name = nameTextField.text
-        self.navigationController?.pushViewController(welcomeVC, animated: true)
+        self.present(welcomeVC, animated: true, completion: nil)
     }
     
     /*

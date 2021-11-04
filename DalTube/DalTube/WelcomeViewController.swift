@@ -29,7 +29,11 @@ class WelcomeViewController: UIViewController {
     
     //다른 계정으로 로그인하기
     @IBAction func touchUpToGoToLoginView(_ sender: Any) {
-        self.navigationController?.popToRootViewController(animated: true)
+        guard let pvc = presentingViewController as? UINavigationController else { return }
+               
+              dismiss(animated: true) {
+                        pvc.popToRootViewController(animated: true)
+              }
     }
     
     func setNameInLabel () {

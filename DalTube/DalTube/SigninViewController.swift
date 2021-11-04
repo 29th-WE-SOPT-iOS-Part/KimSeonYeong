@@ -37,7 +37,7 @@ class SigninViewController: UIViewController {
         guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
         
         welcomeVC.name = nameTextField.text //name 값 전달
-        self.navigationController?.pushViewController(welcomeVC, animated: true)
+        self.present(welcomeVC, animated: true, completion: nil)
         //welcomeVC 에서 "다른계정로그인"을 클릭했을때 무조건 loginVC로 돌아오게 하기위해 rootViewController를 사용해야해서 1차과제때 present로 구현했던 화면전환을 push로 바꿀 수 밖에 없었다...ㅠㅠ
     }
     
