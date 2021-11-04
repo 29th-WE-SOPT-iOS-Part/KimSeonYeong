@@ -13,6 +13,12 @@
 		9A1870852708521500228B78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A1870832708521500228B78 /* Main.storyboard */; };
 		9A1870872708521600228B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1870862708521600228B78 /* Assets.xcassets */; };
 		9A18708A2708521600228B78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A1870882708521600228B78 /* LaunchScreen.storyboard */; };
+		9A43F82C27293CDD002DC0D5 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43F82B27293CDD002DC0D5 /* CustomTabBarController.swift */; };
+		9A43F838272944A2002DC0D5 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43F837272944A2002DC0D5 /* HomeVC.swift */; };
+		9A43F83A272944B6002DC0D5 /* ShortsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43F839272944B6002DC0D5 /* ShortsVC.swift */; };
+		9A43F83C272944BF002DC0D5 /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43F83B272944BF002DC0D5 /* AddVC.swift */; };
+		9A43F83E272944C9002DC0D5 /* SubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43F83D272944C9002DC0D5 /* SubVC.swift */; };
+		9A43F840272944D2002DC0D5 /* StoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43F83F272944D2002DC0D5 /* StoreVC.swift */; };
 		9A53B76A270A7D7800ECE343 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A53B769270A7D7800ECE343 /* LoginViewController.swift */; };
 		9A53B76C270A7DEB00ECE343 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A53B76B270A7DEB00ECE343 /* SigninViewController.swift */; };
 		9A53B76E270A7E0A00ECE343 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A53B76D270A7E0A00ECE343 /* WelcomeViewController.swift */; };
@@ -27,6 +33,12 @@
 		9A1870862708521600228B78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A1870892708521600228B78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A18708B2708521600228B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A43F82B27293CDD002DC0D5 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		9A43F837272944A2002DC0D5 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		9A43F839272944B6002DC0D5 /* ShortsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsVC.swift; sourceTree = "<group>"; };
+		9A43F83B272944BF002DC0D5 /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
+		9A43F83D272944C9002DC0D5 /* SubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubVC.swift; sourceTree = "<group>"; };
+		9A43F83F272944D2002DC0D5 /* StoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVC.swift; sourceTree = "<group>"; };
 		9A53B769270A7D7800ECE343 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9A53B76B270A7DEB00ECE343 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		9A53B76D270A7E0A00ECE343 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +78,12 @@
 				9A18707F2708521500228B78 /* SceneDelegate.swift */,
 				9A1870812708521500228B78 /* ViewController.swift */,
 				9A1870832708521500228B78 /* Main.storyboard */,
+				9A43F82B27293CDD002DC0D5 /* CustomTabBarController.swift */,
+				9A43F837272944A2002DC0D5 /* HomeVC.swift */,
+				9A43F839272944B6002DC0D5 /* ShortsVC.swift */,
+				9A43F83B272944BF002DC0D5 /* AddVC.swift */,
+				9A43F83D272944C9002DC0D5 /* SubVC.swift */,
+				9A43F83F272944D2002DC0D5 /* StoreVC.swift */,
 				9A1870862708521600228B78 /* Assets.xcassets */,
 				9A1870882708521600228B78 /* LaunchScreen.storyboard */,
 				9A18708B2708521600228B78 /* Info.plist */,
@@ -147,10 +165,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A53B76A270A7D7800ECE343 /* LoginViewController.swift in Sources */,
+				9A43F838272944A2002DC0D5 /* HomeVC.swift in Sources */,
+				9A43F82C27293CDD002DC0D5 /* CustomTabBarController.swift in Sources */,
 				9A53B76C270A7DEB00ECE343 /* SigninViewController.swift in Sources */,
+				9A43F83C272944BF002DC0D5 /* AddVC.swift in Sources */,
 				9A1870822708521500228B78 /* ViewController.swift in Sources */,
+				9A43F840272944D2002DC0D5 /* StoreVC.swift in Sources */,
 				9A53B76E270A7E0A00ECE343 /* WelcomeViewController.swift in Sources */,
+				9A43F83E272944C9002DC0D5 /* SubVC.swift in Sources */,
 				9A18707E2708521500228B78 /* AppDelegate.swift in Sources */,
+				9A43F83A272944B6002DC0D5 /* ShortsVC.swift in Sources */,
 				9A1870802708521500228B78 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
