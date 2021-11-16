@@ -4,13 +4,12 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" rowHeight="75" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="DalTube" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="HomeTableViewCell" rowHeight="75" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="DalTube" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="306"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -31,17 +30,13 @@
                             <constraint firstAttribute="width" constant="36" id="b2V-0L-Vc8"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqI-Nn-afW">
-                        <rect key="frame" x="63" y="223" width="270" height="35"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="270" id="Hhu-TS-2GY"/>
-                            <constraint firstAttribute="height" constant="35" id="Odl-HX-mrC"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1차 iOS 세미나 : iOS 컴포넌트 이해, Xcode 기본 사용법, View 화면전환" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqI-Nn-afW">
+                        <rect key="frame" x="63" y="223" width="292" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfg-eM-uMp">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfg-eM-uMp">
                         <rect key="frame" x="349" y="223" width="26" height="26"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="26" id="feX-F6-MsS"/>
@@ -49,25 +44,27 @@
                         </constraints>
                         <state key="normal" image="moreMenuIcon"/>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEu-ei-FuR">
-                        <rect key="frame" x="63" y="263" width="270" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEu-ei-FuR">
+                        <rect key="frame" x="63" y="267" width="435" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" systemColor="linkColor"/>
                 <constraints>
+                    <constraint firstItem="Pfg-eM-uMp" firstAttribute="leading" secondItem="YqI-Nn-afW" secondAttribute="trailing" constant="16" id="5AP-a4-7ba"/>
+                    <constraint firstItem="ytU-Ho-tHq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7Ku-4K-9Mi"/>
+                    <constraint firstItem="ytU-Ho-tHq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8fy-n8-neR"/>
+                    <constraint firstAttribute="trailing" secondItem="Pfg-eM-uMp" secondAttribute="trailing" id="AWf-Cq-Nay"/>
                     <constraint firstItem="trY-8L-sco" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="D3l-eL-qzX"/>
-                    <constraint firstItem="ytU-Ho-tHq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="H0c-rG-FYy"/>
                     <constraint firstItem="Pfg-eM-uMp" firstAttribute="top" secondItem="trY-8L-sco" secondAttribute="top" id="HLN-f2-A67"/>
-                    <constraint firstItem="ytU-Ho-tHq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HsY-4I-7S7"/>
-                    <constraint firstAttribute="trailing" secondItem="ytU-Ho-tHq" secondAttribute="trailing" id="Kdy-Jg-WG3"/>
                     <constraint firstItem="YqI-Nn-afW" firstAttribute="leading" secondItem="trY-8L-sco" secondAttribute="trailing" constant="12" id="MVL-Pt-iil"/>
                     <constraint firstItem="trY-8L-sco" firstAttribute="top" secondItem="ytU-Ho-tHq" secondAttribute="bottom" constant="11" id="c1e-gs-Shh"/>
+                    <constraint firstAttribute="trailing" secondItem="ytU-Ho-tHq" secondAttribute="trailing" id="etz-pt-NDM"/>
                     <constraint firstItem="AEu-ei-FuR" firstAttribute="top" secondItem="YqI-Nn-afW" secondAttribute="bottom" constant="5" id="gdV-D6-jdr"/>
                     <constraint firstItem="AEu-ei-FuR" firstAttribute="trailing" secondItem="YqI-Nn-afW" secondAttribute="trailing" id="hf7-gl-aKS"/>
                     <constraint firstItem="AEu-ei-FuR" firstAttribute="leading" secondItem="YqI-Nn-afW" secondAttribute="leading" id="vOH-UF-OJD"/>
+                    <constraint firstAttribute="trailing" secondItem="Pfg-eM-uMp" secondAttribute="trailing" id="vRf-gw-saP"/>
                     <constraint firstItem="YqI-Nn-afW" firstAttribute="top" secondItem="trY-8L-sco" secondAttribute="top" id="yu8-2v-0Jc"/>
                 </constraints>
             </tableViewCellContentView>
@@ -84,8 +81,5 @@
     </objects>
     <resources>
         <image name="moreMenuIcon" width="26" height="26"/>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>
