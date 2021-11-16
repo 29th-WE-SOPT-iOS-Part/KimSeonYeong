@@ -10,7 +10,7 @@ import UIKit
 struct HomeContentData {
     
     let title: String
-    let detail: String
+    let information: String
     let authorImageName: String
     let thumbImageName: String
     

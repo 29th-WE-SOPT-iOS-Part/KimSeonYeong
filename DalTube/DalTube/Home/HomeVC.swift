@@ -15,11 +15,19 @@ class HomeVC: UIViewController {
     @IBOutlet weak var alarmBUtton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
     
+    @IBOutlet weak var homeCollectionView: UICollectionView!
+    @IBOutlet weak var homeTableView: UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        registerXib()
+    }
+    
+    func registerXib(){
+        let xibName = UINib(nibName: HomeTableViewCell.identifier, bundle: nil)
+        homeTableView.register(xibName, forCellReuseIdentifier: HomeTableViewCell.identifier)
     }
     
 
