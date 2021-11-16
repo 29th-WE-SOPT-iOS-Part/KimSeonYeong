@@ -74,24 +74,56 @@
 		9A18707C2708521500228B78 /* DalTube */ = {
 			isa = PBXGroup;
 			children = (
-				9A18707D2708521500228B78 /* AppDelegate.swift */,
-				9A18707F2708521500228B78 /* SceneDelegate.swift */,
-				9A1870812708521500228B78 /* ViewController.swift */,
-				9A1870832708521500228B78 /* Main.storyboard */,
-				9A43F82B27293CDD002DC0D5 /* CustomTabBarController.swift */,
-				9A43F837272944A2002DC0D5 /* HomeVC.swift */,
-				9A43F839272944B6002DC0D5 /* ShortsVC.swift */,
-				9A43F83B272944BF002DC0D5 /* AddVC.swift */,
-				9A43F83D272944C9002DC0D5 /* SubVC.swift */,
-				9A43F83F272944D2002DC0D5 /* StoreVC.swift */,
+				9A2D56942743A0AB001B264F /* Resource */,
+				9A2D56952743A11A001B264F /* Home */,
+				9A2D56932743A085001B264F /* TabBar */,
+				9A2D56922743A030001B264F /* Login */,
 				9A1870862708521600228B78 /* Assets.xcassets */,
 				9A1870882708521600228B78 /* LaunchScreen.storyboard */,
+				9A1870832708521500228B78 /* Main.storyboard */,
 				9A18708B2708521600228B78 /* Info.plist */,
+			);
+			path = DalTube;
+			sourceTree = "<group>";
+		};
+		9A2D56922743A030001B264F /* Login */ = {
+			isa = PBXGroup;
+			children = (
 				9A53B769270A7D7800ECE343 /* LoginViewController.swift */,
 				9A53B76B270A7DEB00ECE343 /* SigninViewController.swift */,
 				9A53B76D270A7E0A00ECE343 /* WelcomeViewController.swift */,
 			);
-			path = DalTube;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9A2D56932743A085001B264F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				9A43F82B27293CDD002DC0D5 /* CustomTabBarController.swift */,
+				9A43F839272944B6002DC0D5 /* ShortsVC.swift */,
+				9A43F83B272944BF002DC0D5 /* AddVC.swift */,
+				9A43F83D272944C9002DC0D5 /* SubVC.swift */,
+				9A43F83F272944D2002DC0D5 /* StoreVC.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		9A2D56942743A0AB001B264F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9A18707D2708521500228B78 /* AppDelegate.swift */,
+				9A18707F2708521500228B78 /* SceneDelegate.swift */,
+				9A1870812708521500228B78 /* ViewController.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9A2D56952743A11A001B264F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9A43F837272944A2002DC0D5 /* HomeVC.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
