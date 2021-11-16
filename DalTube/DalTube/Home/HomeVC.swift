@@ -8,10 +8,17 @@
 import UIKit
 
 class HomeVC: UIViewController {
-
+    
+    @IBOutlet weak var logoButton: UIButton!
+    @IBOutlet weak var myChannelButton: UIButton!
+    @IBOutlet weak var watchButton: UIButton!
+    @IBOutlet weak var alarmBUtton: UIButton!
+    @IBOutlet weak var searchButton: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
