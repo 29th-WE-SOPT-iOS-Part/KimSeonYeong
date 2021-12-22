@@ -16,6 +16,10 @@
 		9A1870852708521500228B78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A1870832708521500228B78 /* Main.storyboard */; };
 		9A1870872708521600228B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1870862708521600228B78 /* Assets.xcassets */; };
 		9A18708A2708521600228B78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A1870882708521600228B78 /* LaunchScreen.storyboard */; };
+		9A193E13277333E500231077 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A193E11277333E500231077 /* HomeCollectionViewCell.swift */; };
+		9A193E14277333E500231077 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A193E12277333E500231077 /* HomeCollectionViewCell.xib */; };
+		9A193E172773395C00231077 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A193E152773395C00231077 /* TagCollectionViewCell.swift */; };
+		9A193E182773395C00231077 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A193E162773395C00231077 /* TagCollectionViewCell.xib */; };
 		9A43F82C27293CDD002DC0D5 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43F82B27293CDD002DC0D5 /* CustomTabBarController.swift */; };
 		9A43F838272944A2002DC0D5 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43F837272944A2002DC0D5 /* HomeVC.swift */; };
 		9A43F83A272944B6002DC0D5 /* ShortsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43F839272944B6002DC0D5 /* ShortsVC.swift */; };
@@ -39,6 +43,10 @@
 		9A1870862708521600228B78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A1870892708521600228B78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A18708B2708521600228B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A193E11277333E500231077 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A193E12277333E500231077 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		9A193E152773395C00231077 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A193E162773395C00231077 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
 		9A43F82B27293CDD002DC0D5 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		9A43F837272944A2002DC0D5 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9A43F839272944B6002DC0D5 /* ShortsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsVC.swift; sourceTree = "<group>"; };
@@ -129,6 +137,10 @@
 			children = (
 				9A43F837272944A2002DC0D5 /* HomeVC.swift */,
 				9A04DCA02743E17F0012658D /* HomeTableViewCell.swift */,
+				9A193E11277333E500231077 /* HomeCollectionViewCell.swift */,
+				9A193E152773395C00231077 /* TagCollectionViewCell.swift */,
+				9A193E162773395C00231077 /* TagCollectionViewCell.xib */,
+				9A193E12277333E500231077 /* HomeCollectionViewCell.xib */,
 				9A04DCA12743E17F0012658D /* HomeTableViewCell.xib */,
 				9A04DCA42743E7BA0012658D /* HomeContentDataModel.swift */,
 			);
@@ -192,8 +204,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A193E14277333E500231077 /* HomeCollectionViewCell.xib in Resources */,
 				9A18708A2708521600228B78 /* LaunchScreen.storyboard in Resources */,
 				9A1870872708521600228B78 /* Assets.xcassets in Resources */,
+				9A193E182773395C00231077 /* TagCollectionViewCell.xib in Resources */,
 				9A04DCA32743E17F0012658D /* HomeTableViewCell.xib in Resources */,
 				9A1870852708521500228B78 /* Main.storyboard in Resources */,
 			);
@@ -211,9 +225,11 @@
 				9A43F838272944A2002DC0D5 /* HomeVC.swift in Sources */,
 				9A04DCA22743E17F0012658D /* HomeTableViewCell.swift in Sources */,
 				9A43F82C27293CDD002DC0D5 /* CustomTabBarController.swift in Sources */,
+				9A193E13277333E500231077 /* HomeCollectionViewCell.swift in Sources */,
 				9A53B76C270A7DEB00ECE343 /* SigninViewController.swift in Sources */,
 				9A43F83C272944BF002DC0D5 /* AddVC.swift in Sources */,
 				9A1870822708521500228B78 /* ViewController.swift in Sources */,
+				9A193E172773395C00231077 /* TagCollectionViewCell.swift in Sources */,
 				9A43F840272944D2002DC0D5 /* StoreVC.swift in Sources */,
 				9A53B76E270A7E0A00ECE343 /* WelcomeViewController.swift in Sources */,
 				9A43F83E272944C9002DC0D5 /* SubVC.swift in Sources */,

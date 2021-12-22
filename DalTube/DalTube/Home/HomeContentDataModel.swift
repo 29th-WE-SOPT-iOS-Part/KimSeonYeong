@@ -22,3 +22,13 @@ struct HomeContentData {
         return UIImage(named: authorImageName)
     }
 }
+
+struct HomeTopData {
+    let name : String
+    
+    let iconImageName: String
+    
+    func makeIconImage() -> UIImage? {
+        return UIImage(named: iconImageName)
+    }
+}
