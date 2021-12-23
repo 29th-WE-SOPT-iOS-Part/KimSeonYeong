@@ -139,11 +139,14 @@ extension HomeVC: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
             switch collectionView {
+                
             case homeCollectionView :
                 return CGSize(width: 75, height: 105)
                 
             case tagCollectionView :
-                return CGSize(width: 70, height: 35)
+                let tmpLabel : UILabel = UILabel()
+                tmpLabel.text = tagList[indexPath.item]
+                return CGSize(width: Int(tmpLabel.intrinsicContentSize.width), height: 35)
                 
             default :
                 return CGSize()

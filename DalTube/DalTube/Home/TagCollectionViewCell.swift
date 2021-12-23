@@ -14,14 +14,15 @@ class TagCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var tagLabel: UILabel!
     
     override func awakeFromNib() {
-        super.awakeFromNib()
         setLayout()
+        super.awakeFromNib()
     }
     
     func setLayout() {
-        layer.cornerRadius = 13
-        layer.borderColor = UIColor(red: 218, green: 218, blue: 218, alpha: 1).cgColor
-        layer.backgroundColor = UIColor(red: 242, green: 242, blue: 242, alpha: 1).cgColor
+        tagLabel.layer.cornerRadius = 17
+        tagLabel.layer.borderWidth = 1
+        tagLabel.layer.borderColor = UIColor(red: 212, green: 212, blue: 212, alpha: 1).cgColor
+        tagLabel.layer.backgroundColor = UIColor(red: 242, green: 242, blue: 242, alpha: 1).cgColor
     }
 
     func setData(appName: String) {
