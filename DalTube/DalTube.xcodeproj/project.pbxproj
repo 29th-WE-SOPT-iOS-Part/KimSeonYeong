@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F092D108C58CE0BB3C4CBCF /* Pods_DalTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4AA4240BCBBBDD9584CE3A /* Pods_DalTube.framework */; };
 		9A04DCA22743E17F0012658D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A04DCA02743E17F0012658D /* HomeTableViewCell.swift */; };
 		9A04DCA32743E17F0012658D /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A04DCA12743E17F0012658D /* HomeTableViewCell.xib */; };
 		9A04DCA52743E7BA0012658D /* HomeContentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A04DCA42743E7BA0012658D /* HomeContentDataModel.swift */; };
@@ -32,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		053A7D81CDD0FABA5B56F7FD /* Pods-DalTube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DalTube.debug.xcconfig"; path = "Target Support Files/Pods-DalTube/Pods-DalTube.debug.xcconfig"; sourceTree = "<group>"; };
+		2F4AA4240BCBBBDD9584CE3A /* Pods_DalTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DalTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6647690D6A1F78395DBD5682 /* Pods-DalTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DalTube.release.xcconfig"; path = "Target Support Files/Pods-DalTube/Pods-DalTube.release.xcconfig"; sourceTree = "<group>"; };
 		9A04DCA02743E17F0012658D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		9A04DCA12743E17F0012658D /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		9A04DCA42743E7BA0012658D /* HomeContentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentDataModel.swift; sourceTree = "<group>"; };
@@ -63,17 +67,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F092D108C58CE0BB3C4CBCF /* Pods_DalTube.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35820517A9E6B1F67414976F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F4AA4240BCBBBDD9584CE3A /* Pods_DalTube.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A1870712708521500228B78 = {
 			isa = PBXGroup;
 			children = (
 				9A18707C2708521500228B78 /* DalTube */,
 				9A18707B2708521500228B78 /* Products */,
+				BC6F2FF2BD23D23843C59830 /* Pods */,
+				35820517A9E6B1F67414976F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +162,16 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		BC6F2FF2BD23D23843C59830 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				053A7D81CDD0FABA5B56F7FD /* Pods-DalTube.debug.xcconfig */,
+				6647690D6A1F78395DBD5682 /* Pods-DalTube.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A18708E2708521600228B78 /* Build configuration list for PBXNativeTarget "DalTube" */;
 			buildPhases = (
+				F93D8D2E1DF6799F0792747C /* [CP] Check Pods Manifest.lock */,
 				9A1870762708521500228B78 /* Sources */,
 				9A1870772708521500228B78 /* Frameworks */,
 				9A1870782708521500228B78 /* Resources */,
+				8FB50EEA9B84DDDD0187A551 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +241,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8FB50EEA9B84DDDD0187A551 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DalTube/Pods-DalTube-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DalTube/Pods-DalTube-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DalTube/Pods-DalTube-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F93D8D2E1DF6799F0792747C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DalTube-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A1870762708521500228B78 /* Sources */ = {
@@ -379,6 +448,7 @@
 		};
 		9A18708F2708521600228B78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 053A7D81CDD0FABA5B56F7FD /* Pods-DalTube.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -397,6 +467,7 @@
 		};
 		9A1870902708521600228B78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6647690D6A1F78395DBD5682 /* Pods-DalTube.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
