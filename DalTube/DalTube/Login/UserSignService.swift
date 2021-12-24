@@ -23,5 +23,7 @@ struct UserSignService {
             "email" : email,
             "password" : password
         ]
+        
+        let dataRequest = AF.request(url, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header)
     }
 }
