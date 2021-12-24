@@ -36,6 +36,14 @@ class HomeVC: UIViewController {
         tagCollectionView.delegate = self
     }
     
+    @IBAction func touchUpToGoToLoginVIew(_ sender: Any) {
+        guard let navigationVC = self.storyboard?.instantiateViewController(withIdentifier: "NavigationController") else {return}
+        
+        navigationVC.modalPresentationStyle = .fullScreen
+        self.present(navigationVC, animated: true, completion: nil)
+    }
+    
+    
     func registerXib(){
         homeTableView.register(UINib(nibName: HomeTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: HomeTableViewCell.identifier)
         

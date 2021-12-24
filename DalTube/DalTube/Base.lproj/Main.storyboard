@@ -351,6 +351,9 @@
                                             <constraint firstAttribute="width" secondItem="ci9-Ff-oDs" secondAttribute="height" multiplier="1:1" id="lMu-ec-j2s"/>
                                         </constraints>
                                         <state key="normal" image="wesoptProfile"/>
+                                        <connections>
+                                            <action selector="touchUpToGoToLoginVIew:" destination="nXU-8R-qcA" eventType="touchUpInside" id="i7z-7d-m8v"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhC-hn-1Gt">
                                         <rect key="frame" x="315" y="9" width="32" height="32"/>
@@ -538,7 +541,7 @@
         <!--Navigation Controller-->
         <scene sceneID="z3z-Jr-yx8">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="2Ge-kj-wQk" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="2Ge-kj-wQk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="r0j-np-WUZ">
                         <autoresizingMask key="autoresizingMask"/>
