@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		9A193E14277333E500231077 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A193E12277333E500231077 /* HomeCollectionViewCell.xib */; };
 		9A193E172773395C00231077 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A193E152773395C00231077 /* TagCollectionViewCell.swift */; };
 		9A193E182773395C00231077 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A193E162773395C00231077 /* TagCollectionViewCell.xib */; };
+		9A193E1A27758AB700231077 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A193E1927758AB700231077 /* APIConstants.swift */; };
 		9A43F82C27293CDD002DC0D5 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43F82B27293CDD002DC0D5 /* CustomTabBarController.swift */; };
 		9A43F838272944A2002DC0D5 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43F837272944A2002DC0D5 /* HomeVC.swift */; };
 		9A43F83A272944B6002DC0D5 /* ShortsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43F839272944B6002DC0D5 /* ShortsVC.swift */; };
@@ -51,6 +52,7 @@
 		9A193E12277333E500231077 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		9A193E152773395C00231077 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 		9A193E162773395C00231077 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
+		9A193E1927758AB700231077 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		9A43F82B27293CDD002DC0D5 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		9A43F837272944A2002DC0D5 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9A43F839272944B6002DC0D5 /* ShortsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsVC.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		9A18707C2708521500228B78 /* DalTube */ = {
 			isa = PBXGroup;
 			children = (
+				9A193E1B27758B1100231077 /* Network */,
 				9A2D56942743A0AB001B264F /* Resource */,
 				9A2D56952743A11A001B264F /* Home */,
 				9A2D56932743A085001B264F /* TabBar */,
@@ -113,6 +116,14 @@
 				9A18708B2708521600228B78 /* Info.plist */,
 			);
 			path = DalTube;
+			sourceTree = "<group>";
+		};
+		9A193E1B27758B1100231077 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9A193E1927758AB700231077 /* APIConstants.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		9A2D56922743A030001B264F /* Login */ = {
@@ -168,7 +179,6 @@
 				053A7D81CDD0FABA5B56F7FD /* Pods-DalTube.debug.xcconfig */,
 				6647690D6A1F78395DBD5682 /* Pods-DalTube.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -291,6 +301,7 @@
 			files = (
 				9A04DCA52743E7BA0012658D /* HomeContentDataModel.swift in Sources */,
 				9A53B76A270A7D7800ECE343 /* LoginViewController.swift in Sources */,
+				9A193E1A27758AB700231077 /* APIConstants.swift in Sources */,
 				9A43F838272944A2002DC0D5 /* HomeVC.swift in Sources */,
 				9A04DCA22743E17F0012658D /* HomeTableViewCell.swift in Sources */,
 				9A43F82C27293CDD002DC0D5 /* CustomTabBarController.swift in Sources */,

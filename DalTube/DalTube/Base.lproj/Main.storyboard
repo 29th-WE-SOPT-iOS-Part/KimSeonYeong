@@ -118,7 +118,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="TVx-xC-dBs"/>
                     <connections>
+                        <outlet property="emailTextField" destination="4e6-oT-lWr" id="og4-q1-HDS"/>
                         <outlet property="nameTextField" destination="lrL-Pw-wBU" id="Bcz-Sz-0Bi"/>
+                        <outlet property="passwordTextField" destination="3ex-Ws-NHf" id="DZb-WV-CWf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PoG-pq-4jP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
