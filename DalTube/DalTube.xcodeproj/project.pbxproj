@@ -22,6 +22,9 @@
 		9A193E172773395C00231077 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A193E152773395C00231077 /* TagCollectionViewCell.swift */; };
 		9A193E182773395C00231077 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A193E162773395C00231077 /* TagCollectionViewCell.xib */; };
 		9A193E1A27758AB700231077 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A193E1927758AB700231077 /* APIConstants.swift */; };
+		9A193E1D27758B4900231077 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A193E1C27758B4900231077 /* NetworkResult.swift */; };
+		9A193E1F27758BF600231077 /* LoginResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A193E1E27758BF600231077 /* LoginResponseDataModel.swift */; };
+		9A193E2127758C5E00231077 /* UserSignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A193E2027758C5E00231077 /* UserSignService.swift */; };
 		9A43F82C27293CDD002DC0D5 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43F82B27293CDD002DC0D5 /* CustomTabBarController.swift */; };
 		9A43F838272944A2002DC0D5 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43F837272944A2002DC0D5 /* HomeVC.swift */; };
 		9A43F83A272944B6002DC0D5 /* ShortsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43F839272944B6002DC0D5 /* ShortsVC.swift */; };
@@ -53,6 +56,9 @@
 		9A193E152773395C00231077 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 		9A193E162773395C00231077 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
 		9A193E1927758AB700231077 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		9A193E1C27758B4900231077 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		9A193E1E27758BF600231077 /* LoginResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDataModel.swift; sourceTree = "<group>"; };
+		9A193E2027758C5E00231077 /* UserSignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignService.swift; sourceTree = "<group>"; };
 		9A43F82B27293CDD002DC0D5 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		9A43F837272944A2002DC0D5 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9A43F839272944B6002DC0D5 /* ShortsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsVC.swift; sourceTree = "<group>"; };
@@ -122,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				9A193E1927758AB700231077 /* APIConstants.swift */,
+				9A193E1C27758B4900231077 /* NetworkResult.swift */,
+				9A193E1E27758BF600231077 /* LoginResponseDataModel.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 				9A53B769270A7D7800ECE343 /* LoginViewController.swift */,
 				9A53B76B270A7DEB00ECE343 /* SigninViewController.swift */,
 				9A53B76D270A7E0A00ECE343 /* WelcomeViewController.swift */,
+				9A193E2027758C5E00231077 /* UserSignService.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -302,10 +311,13 @@
 				9A04DCA52743E7BA0012658D /* HomeContentDataModel.swift in Sources */,
 				9A53B76A270A7D7800ECE343 /* LoginViewController.swift in Sources */,
 				9A193E1A27758AB700231077 /* APIConstants.swift in Sources */,
+				9A193E1D27758B4900231077 /* NetworkResult.swift in Sources */,
 				9A43F838272944A2002DC0D5 /* HomeVC.swift in Sources */,
+				9A193E1F27758BF600231077 /* LoginResponseDataModel.swift in Sources */,
 				9A04DCA22743E17F0012658D /* HomeTableViewCell.swift in Sources */,
 				9A43F82C27293CDD002DC0D5 /* CustomTabBarController.swift in Sources */,
 				9A193E13277333E500231077 /* HomeCollectionViewCell.swift in Sources */,
+				9A193E2127758C5E00231077 /* UserSignService.swift in Sources */,
 				9A53B76C270A7DEB00ECE343 /* SigninViewController.swift in Sources */,
 				9A43F83C272944BF002DC0D5 /* AddVC.swift in Sources */,
 				9A1870822708521500228B78 /* ViewController.swift in Sources */,
