@@ -25,5 +25,19 @@ struct UserSignService {
         ]
         
         let dataRequest = AF.request(url, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header)
+        
+        dataRequest.responseData { dataResponse in
+            switch dataResponse.result {
+            case .success :
+                guard let statusCode = dataResponse.response?.statusCode else {return}
+                guard let value = dataResponse.value else {return}
+                let networkResult = self.judgeLgoinStatus(by: stautsCode, value)
+                completion(networkResult)
+                
+            case .failure(let err) :
+                print(err)
+                completion(.networkFail)
+            }
+            }
     }
 }
