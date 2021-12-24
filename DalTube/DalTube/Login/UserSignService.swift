@@ -31,13 +31,24 @@ struct UserSignService {
             case .success :
                 guard let statusCode = dataResponse.response?.statusCode else {return}
                 guard let value = dataResponse.value else {return}
-                let networkResult = self.judgeLgoinStatus(by: stautsCode, value)
+                let networkResult = self.judgeLoginStatus(by: statusCode, value)
                 completion(networkResult)
                 
             case .failure(let err) :
                 print(err)
                 completion(.networkFail)
             }
-            }
+        }
     }
+    
+    private func judgeLoginStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
+        switch statusCode {
+        case 200: return isValidLoginData(data: data)
+        case 400: return .pathErr
+        case 500: return .serverErr
+        default : return .networkFail
+        }
+    }
+    
+
 }
