@@ -48,18 +48,27 @@ extension LoginViewController {
                                      password: passwordTextField.text ?? "") {
             responseData in
             switch responseData {
+                
             case .success(let loginResponse) :
                 guard let response = loginResponse as? LoginResponseData else {return}
                 if let userData = response.data {
-                    self.simpleAlert(title: response.message,
-                                     message: "\(userData.name)님 환영합니다")
+//                    self.simpleAlert(title: response.message,
+//                                     message: "\(userData.name)님 환영합니다")
+                    self.simpleAlert(title: "로그인",
+                                     message: "로그인 성공")
                 }
-            case .requestErr(let msg) :
-                print("requestERR \(msg)")
+                
+            case .requestErr(let loginResponse) :
+                guard let response = loginResponse as? LoginResponseData else {return}
+                self.simpleAlert(title: "로그인",
+                                 message: "\(response.message)")
+                
             case .pathErr:
                 print("pathErr")
+
             case .serverErr:
                 print("serverErr")
+                
             case .networkFail:
                 print("networkFail")
             }

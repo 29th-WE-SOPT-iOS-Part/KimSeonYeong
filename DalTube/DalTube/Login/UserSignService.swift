@@ -43,17 +43,23 @@ struct UserSignService {
     
     private func judgeLoginStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
         switch statusCode {
-        case 200: return isValidLoginData(data: data)
-        case 400: return .pathErr
+        case 200: return isValidLoginData(data: data, success: true)
+        case 400: return isValidLoginData(data: data, success: false)
         case 500: return .serverErr
         default : return .networkFail
         }
     }
     
-    private func isValidLoginData(data: Data) -> NetworkResult<Any> {
+    private func isValidLoginData(data: Data, success: Bool) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(LoginResponseData.self, from: data)
         else {return .pathErr}
-        return .success(decodedData)
+        
+        switch success {
+        case true:
+            return .success(decodedData)
+        case false :
+            return .requestErr(decodedData)
+        }
     }
 }
