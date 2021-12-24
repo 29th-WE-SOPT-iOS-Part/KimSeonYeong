@@ -30,6 +30,8 @@ class LoginViewController: UIViewController {
 //
 //        welcomeVC.name = nameTextField.text
 //        self.present(welcomeVC, animated: true, completion: nil)
+        
+        requestLogin()
     }
     
     func simpleAlert(title: String, message: String) {
@@ -38,5 +40,29 @@ class LoginViewController: UIViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
-    
+}
+
+extension LoginViewController {
+    func requestLogin() {
+        UserSignService.shared.login(email: emailTextField.text ?? "",
+                                     password: passwordTextField.text ?? "") {
+            responseData in
+            switch responseData {
+            case .success(let loginResponse) :
+                guard let response = loginResponse as? LoginResponseData else {return}
+                if let userData = response.data {
+                    self.simpleAlert(title: response.message,
+                                     message: "\(userData.name)님 환영합니다")
+                }
+            case .requestErr(let msg) :
+                print("requestERR \(msg)")
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
+    }
 }
