@@ -10,7 +10,8 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
-
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,20 +26,52 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func touchUpToGoToWelcomeView(_ sender: Any) {
-        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
+//        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
+//
+//        welcomeVC.name = nameTextField.text
+//        self.present(welcomeVC, animated: true, completion: nil)
         
-        welcomeVC.name = nameTextField.text
-        self.present(welcomeVC, animated: true, completion: nil)
+        requestLogin()
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func simpleAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "확인", style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
     }
-    */
+}
 
+extension LoginViewController {
+    func requestLogin() {
+        UserSignService.shared.login(email: emailTextField.text ?? "",
+                                     password: passwordTextField.text ?? "") {
+            responseData in
+            switch responseData {
+                
+            case .success(let loginResponse) :
+                guard let response = loginResponse as? LoginResponseData else {return}
+                if let userData = response.data {
+//                    self.simpleAlert(title: response.message,
+//                                     message: "\(userData.name)님 환영합니다")
+                    self.simpleAlert(title: "로그인",
+                                     message: "로그인 성공")
+                }
+                
+            case .requestErr(let loginResponse) :
+                guard let response = loginResponse as? LoginResponseData else {return}
+                self.simpleAlert(title: "로그인",
+                                 message: "\(response.message)")
+                
+            case .pathErr:
+                print("pathErr")
+
+            case .serverErr:
+                print("serverErr")
+                
+            case .networkFail:
+                print("networkFail")
+            }
+        }
+    }
 }
